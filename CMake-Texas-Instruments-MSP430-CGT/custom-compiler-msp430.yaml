@@ -4,7 +4,7 @@ compilers:
   - description: C11 TI CGT MSP430 v21
     match-sources: ".*\\.c"
     match-language: C
-    match-compiler-exe: "(.*/)?my_compiler(\\.exe)?"
+    match-compiler-exe: "(.*/)?cl430(\\.exe)?"
     code-insight-target-name: msp430
     include-dirs: ${compiler-exe-dir}/../include
     defines:
@@ -68,7 +68,7 @@ compilers:
   - description: Cpp14 TI CGT MSP430 v21
     match-sources: ".*\\.cpp"
     match-language: CPP
-    match-compiler-exe: "(.*/)?my_compiler(\\.exe)?"
+    match-compiler-exe: "(.*/)?cl430(\\.exe)?"
     code-insight-target-name: msp430
     include-dirs: ["${compiler-exe-dir}/../include/libcxx","${compiler-exe-dir}/../include"]
     defines:
