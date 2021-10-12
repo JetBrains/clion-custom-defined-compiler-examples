@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "configurePresets": [
+    {
+      "name": "bcc32c",
+      "generator": "Ninja",
+      "binaryDir": "cmake-build-bcc",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "C:/tools/BCC102/bin/bcc32c.exe",
+        "CMAKE_CXX_COMPILER": "C:/tools/BCC102/bin/bcc32c.exe"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "BCC32C",
+      "displayName": "Embarcadero BCC32C",
+      "description": "Automatic preset for Embarcadero Free C Compiler",
+      "configurePreset": "bcc32c"
+    }
+  ]
+}

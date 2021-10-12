@@ -1,0 +1,200 @@
+aliases:
+  - &Embarcadero-7-30-exe
+    match-compiler-exe: "(.*/)?bcc32[xc](\\.exe)?"
+    code-insight-target-name: aarch64
+  - &Common-Embarcadero-7-30-defines
+    __BORLANDC__: &version "0x0730"
+    __CODEGEARC__: *version
+    __CONSOLE__: "1"
+    _CPPUNWIND: "1"
+    _M_IX86: "0x12c"
+    _PUSHPOP_SUPPORTED: "1"
+    _STDCALL_SUPPORTED: "1"
+    __TEMPLATES__: "1"
+    __TLS__: "1"
+    __TURBOC__: *version
+    _WCHAR_T:
+    _WCHAR_T_DEFINED:
+    _Windows: "1"
+    _WIN64: "1"
+    _INTEGRAL_MAX_BITS: "64"
+    _M_IX86_FP: "0"
+    _WIN32: "1"
+    __ATOMIC_ACQUIRE: "2"
+    __ATOMIC_ACQ_REL: "4"
+    __ATOMIC_CONSUME: "1"
+    __ATOMIC_RELAXED: "0"
+    __ATOMIC_RELEASE: "3"
+    __ATOMIC_SEQ_CST: "5"
+    __BYTE_ORDER__: "__ORDER_LITTLE_ENDIAN__"
+    __CHAR16_TYPE__: "unsigned short"
+    __CHAR32_TYPE__: "unsigned int"
+    __CHAR_BIT__: "8"
+    __CODEGEARC_VERSION__: "0x7308CAF"
+    __CONSTANT_CFSTRINGS__: "1"
+    __DBL_DENORM_MIN__: "4.9406564584124654e-324"
+    __DBL_DIG__: "15"
+    __DBL_EPSILON__: "2.2204460492503131e-16"
+    __DBL_HAS_DENORM__: "1"
+    __DBL_HAS_INFINITY__: "1"
+    __DBL_HAS_QUIET_NAN__: "1"
+    __DBL_MANT_DIG__: "53"
+    __DBL_MAX_10_EXP__: "308"
+    __DBL_MAX_EXP__: "1024"
+    __DBL_MAX__: "1.7976931348623157e+308"
+    __DBL_MIN_10_EXP__: "(-307)"
+    __DBL_MIN_EXP__: "(-1021)"
+    __DBL_MIN__: "2.2250738585072014e-308"
+    __DECIMAL_DIG__: "21"
+    __FINITE_MATH_ONLY__: "0"
+    __FLAT__: "1"
+    __FLT_DENORM_MIN__: "1.40129846e-45F"
+    __FLT_DIG__: "6"
+    __FLT_EPSILON__: "1.19209290e-7F"
+    __FLT_EVAL_METHOD__: "2"
+    __FLT_HAS_DENORM__: "1"
+    __FLT_HAS_INFINITY__: "1"
+    __FLT_HAS_QUIET_NAN__: "1"
+    __FLT_MANT_DIG__: "24"
+    __FLT_MAX_10_EXP__: "38"
+    __FLT_MAX_EXP__: "128"
+    __FLT_MAX__: "3.40282347e+38F"
+    __FLT_MIN_10_EXP__: "(-37)"
+    __FLT_MIN_EXP__: "(-125)"
+    __FLT_MIN__: "1.17549435e-38F"
+    __FLT_RADIX__: "2"
+    __FUNC__: "__FUNCTION__"
+    __GCC_ATOMIC_BOOL_LOCK_FREE: "2"
+    __GCC_ATOMIC_CHAR16_T_LOCK_FREE: "2"
+    __GCC_ATOMIC_CHAR32_T_LOCK_FREE: "2"
+    __GCC_ATOMIC_CHAR_LOCK_FREE: "2"
+    __GCC_ATOMIC_INT_LOCK_FREE: "2"
+    __GCC_ATOMIC_LLONG_LOCK_FREE: "2"
+    __GCC_ATOMIC_LONG_LOCK_FREE: "2"
+    __GCC_ATOMIC_POINTER_LOCK_FREE: "2"
+    __GCC_ATOMIC_SHORT_LOCK_FREE: "2"
+    __GCC_ATOMIC_TEST_AND_SET_TRUEVAL: "1"
+    __GCC_ATOMIC_WCHAR_T_LOCK_FREE: "2"
+    __GNUC_STDC_INLINE__: "1"
+    __GXX_RTTI: "1"
+    __INT16_TYPE__: "short"
+    __INT32_TYPE__: "int"
+    __INT64_C_SUFFIX__: "LL"
+    __INT64_TYPE__: "long long int"
+    __INT8_TYPE__: "char"
+    __INTMAX_MAX__: "9223372036854775807LL"
+    __INTMAX_TYPE__: "long long int"
+    __INTMAX_WIDTH__: "64"
+    __INTPTR_TYPE__: "int"
+    __INTPTR_WIDTH__: "32"
+    __INT_MAX__: "2147483647"
+    __LDBL_DENORM_MIN__: "3.64519953188247460253e-4951L"
+    __LDBL_DIG__: "18"
+    __LDBL_EPSILON__: "1.08420217248550443401e-19L"
+    __LDBL_HAS_DENORM__: "1"
+    __LDBL_HAS_INFINITY__: "1"
+    __LDBL_HAS_QUIET_NAN__: "1"
+    __LDBL_MANT_DIG__: "64"
+    __LDBL_MAX_10_EXP__: "4932"
+    __LDBL_MAX_EXP__: "16384"
+    __LDBL_MAX__: "1.18973149535723176502e+4932L"
+    __LDBL_MIN_10_EXP__: "(-4931)"
+    __LDBL_MIN_EXP__: "(-16381)"
+    __LDBL_MIN__: "3.36210314311209350626e-4932L"
+    __LITTLE_ENDIAN__: "1"
+    __LONG_LONG_MAX__: "9223372036854775807LL"
+    __LONG_MAX__: "2147483647L"
+    __NO_INLINE__: "1"
+    __NO_MATH_INLINES: "1"
+    __ORDER_BIG_ENDIAN__: "4321"
+    __ORDER_LITTLE_ENDIAN__: "1234"
+    __ORDER_PDP_ENDIAN__: "3412"
+    __POINTER_WIDTH__: "32"
+    __PRAGMA_REDEFINE_EXTNAME: "1"
+    __PTRDIFF_TYPE__: "int"
+    __PTRDIFF_WIDTH__: "32"
+    __REGISTER_PREFIX__: "__SCHAR_MAX__ 127"
+    __SHRT_MAX__: "32767"
+    __SIG_ATOMIC_WIDTH__: "32"
+    __SIZEOF_DOUBLE__: "8"
+    __SIZEOF_FLOAT__: "4"
+    __SIZEOF_INT__: "4"
+    __SIZEOF_LONG_DOUBLE__: "10"
+    __SIZEOF_LONG_LONG__: "8"
+    __SIZEOF_LONG__: "4"
+    __SIZEOF_POINTER__: "4"
+    __SIZEOF_PTRDIFF_T__: "4"
+    __SIZEOF_SHORT__: "2"
+    __SIZEOF_SIZE_T__: "4"
+    __SIZEOF_WCHAR_T__: "2"
+    __SIZEOF_WINT_T__: "4"
+    __SIZE_MAX__: "4294967295U"
+    __SIZE_TYPE__: "unsigned int"
+    __SIZE_WIDTH__: "32"
+    __STDC_HOSTED__: "1"
+    __STDC_VERSION__: "199901L"
+    __STRICT_ANSI__: "1"
+    __UINTMAX_TYPE__: "long long unsigned int"
+    __USER_LABEL_PREFIX__: "_"
+    __UUID_SUPPORT__: "1"
+    __VERSION__: "4.2.1 Compatible Embarcadero Technologies Inc. bcc32x 3.3.1 (36350.30c6854.779bede)"
+    __WCHAR_MAX__: "65535U"
+    __WCHAR_TYPE__: "unsigned short"
+    __WCHAR_UNSIGNED__: "1"
+    __WCHAR_WIDTH__: "16"
+    __WINT_TYPE__: "int"
+    __WINT_WIDTH__: "32"
+    __clang__: "1"
+    __clang_major__: "3"
+    __clang_minor__: "3"
+    __clang_patchlevel__: "1"
+    __clang_version__: "3.3.1 (36350.30c6854.779bede)"
+    __i386: "1"
+    __i386__: "1"
+    __llvm__: "1"
+    __BCOPT__: "1"
+    __BOOL__: "1"
+
+  - &C-Embarcadero-7-30
+    include-dirs: ${compiler-exe-dir}/../include/windows/crtl
+    defines:
+      <<: *Common-Embarcadero-7-30-defines
+
+  - &CPP-Embarcadero-7-30
+    include-dirs:
+      - ${compiler-exe-dir}/../include/windows/crtl
+      - ${compiler-exe-dir}/../include/dinkumware64
+    defines:
+      <<: *Common-Embarcadero-7-30-defines
+      __BCPLUSPLUS__: *version
+      __cplusplus: "201402L"
+      __TCPLUSPLUS__: *version
+    defines-text: "
+#define defined_as_text some_text
+"
+
+compilers:
+
+  - description: C Embarcadero 7.30 by extension
+    <<: *Embarcadero-7-30-exe
+    match-sources: ".*\\.c"
+    match-language: C
+    <<: *C-Embarcadero-7-30
+
+  - description: CPP Embarcadero 7.30 by extension
+    <<: *Embarcadero-7-30-exe
+    match-sources: ".*\\.cpp"
+    match-language: CPP
+    <<: *CPP-Embarcadero-7-30
+
+  - description: CPP Embarcadero 7.30 by join cli key
+    <<: *Embarcadero-7-30-exe
+    match-args: "-xc++"
+    match-language: CPP
+    <<: *CPP-Embarcadero-7-30
+
+  - description: CPP Embarcadero 7.30 by split cli key
+    <<: *Embarcadero-7-30-exe
+    match-args: "-x c++"
+    match-language: CPP
+    <<: *CPP-Embarcadero-7-30
