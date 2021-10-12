@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "configurePresets": [
+    {
+      "name": "cl430",
+      "generator": "Ninja",
+      "binaryDir": "cmake-build-cl430",
+      "vendor": {
+        "jetbrains.com/clion": {
+          "toolchain": "MSP430"
+        }
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "cl430",
+      "displayName": "Texas Instruments CGT MSP430 V21",
+      "description": "Automatic preset for TI MSP430 compiler",
+      "configurePreset": "cl430"
+    }
+  ]
+}

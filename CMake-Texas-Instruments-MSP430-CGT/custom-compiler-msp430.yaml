@@ -1,0 +1,166 @@
+
+compilers:
+
+  - description: C11 TI CGT MSP430 v21
+    match-sources: ".*\\.c"
+    match-language: C
+    match-compiler-exe: "(.*/)?my_compiler(\\.exe)?"
+    code-insight-target-name: msp430
+    include-dirs: ${compiler-exe-dir}/../include
+    defines:
+      _DATA_ACCESS:
+    defines-text: "
+#define __unsigned_chars__ 1	
+#define __PRAGMA_REDEFINE_EXTNAME 1
+#define __DATE__ \"Oct  1 2021\"
+#define __TIME__ \"12:35:40\"
+#define __STDC__ 1
+#define __STDC_VERSION__ 201112L	
+#define __STDC_UTF_16__ 1	
+#define __STDC_UTF_32__ 1	
+#define __STDC_HOSTED__ 1	
+#define __TI_C99_COMPLEX_ENABLED__ 1	
+#define __STDC_NO_THREADS__ 1	
+#define __edg_front_end__ 1	
+#define __EDG_VERSION__ 413	
+#define __EDG_SIZE_TYPE__ unsigned int	
+#define __EDG_PTRDIFF_TYPE__ int	
+#define __VERSION__ \"EDG gcc 4.8 mode\"
+#define __CHAR16_TYPE__ unsigned short
+#define __CHAR32_TYPE__ unsigned long	
+#define __TI_COMPILER_VERSION__ 21006000	
+#define __COMPILER_VERSION__ 21006000	
+#define __TI_COMPILER_VERSION_QUAL_ID__ 21147	
+#define __TI_COMPILER_VERSION_QUAL__ QUAL_LETTER	
+#define __MSP430__ 1	
+#define __SIZE_T_TYPE__ unsigned	
+#define __PTRDIFF_T_TYPE__ int	
+#define __WCHAR_T_TYPE__ unsigned int
+#define __TI_EABI__ 1	
+#define __ELF__ 1	
+#define __little_endian__ 1	
+#define __LITTLE_ENDIAN__ 1	
+#define __TI_STRICT_ANSI_MODE__ 0	
+#define __TI_WCHAR_T_BITS__ 16	
+#define __TI_GNU_ATTRIBUTE_SUPPORT__ 1
+#define __TI_STRICT_FP_MODE__ 1	
+#define __CHAR_BIT__ 8	
+#define __SCHAR_MAX__ 127	
+#define __SHRT_MAX__ 32767	
+#define __INT_MAX__ 32767	
+#define __LONG_MAX__ 2147483647	
+#define __LONG_LONG_MAX__ 9223372036854775807	
+#define __SIZEOF_INT__ 2	
+#define __SIZEOF_SHORT__ 2	
+#define __SIZEOF_LONG__ 4	
+#define __SIZEOF_LONG_LONG__ 8	
+#define __SIZEOF_WCHAR_T__ 2	
+#define __SIZEOF_FLOAT__ 4	
+#define __SIZEOF_DOUBLE__ 8	
+#define __SIZEOF_LONG_DOUBLE__ 8	
+#define __SIZEOF_SIZE_T__ 2	
+#define __SIZEOF_WINT_T__ 2	
+#define __SIZEOF_PTRDIFF_T__ 2	
+#define _OPTIMIZE_FOR_SPACE 1
+#define _INLINE 1
+"
+
+  - description: Cpp14 TI CGT MSP430 v21
+    match-sources: ".*\\.cpp"
+    match-language: CPP
+    match-compiler-exe: "(.*/)?my_compiler(\\.exe)?"
+    code-insight-target-name: msp430
+    include-dirs: ["${compiler-exe-dir}/../include/libcxx","${compiler-exe-dir}/../include"]
+    defines:
+      _DATA_ACCESS: #TI specific keyword
+    defines-text: "
+#define __unsigned_chars__ 1	
+#define __PRAGMA_REDEFINE_EXTNAME 1	
+#define __DATE__ \"Oct  1 2021\"	
+#define __TIME__ \"12:37:15\"	
+#define __STDC__ 1	
+#define __STDC_HOSTED__ 1	
+#define __cplusplus 201402L	
+#define _WCHAR_T 1	
+#define __CHAR16_T_AND_CHAR32_T 1	
+#define _BOOL 1	
+#define __ARRAY_OPERATORS 1	
+#define __PLACEMENT_DELETE 1	
+#define __EDG_RUNTIME_USES_NAMESPACES 1	
+#define __EDG_IA64_ABI 1	
+#define __EDG_IA64_ABI_VARIANT_CTORS_AND_DTORS_RETURN_THIS 1	
+#define __EDG_IA64_ABI_USE_VARIANT_INT_STATIC_INIT_GUARD 1	
+#define __cpp_initializer_lists 200806	
+#define __cpp_sized_deallocation 201309	
+#define __cpp_unicode_characters 200704	
+#define __cpp_aggregate_nsdmi 201304	
+#define __cpp_alias_templates 200704	
+#define __cpp_attributes 200809	
+#define __cpp_binary_literals 201304	
+#define __cpp_decltype 200707	
+#define __cpp_decltype_auto 201304	
+#define __cpp_delegating_constructors 200604	
+#define __cpp_generic_lambdas 201304	
+#define __cpp_inheriting_constructors 200802	
+#define __cpp_init_captures 201304	
+#define __cpp_lambdas 200907	
+#define __cpp_nsdmi 200809	
+#define __cpp_raw_strings 200710	
+#define __cpp_ref_qualifiers 200710	
+#define __cpp_return_type_deduction 201304	
+#define __cpp_rvalue_references 200610	
+#define __cpp_unicode_literals 200710	
+#define __cpp_user_defined_literals 200809	
+#define __cpp_variable_templates 201304	
+#define __cpp_variadic_templates 200704	
+#define __cpp_constexpr 201304	
+#define __cpp_range_based_for 200907	
+#define __cpp_static_assert 200410	
+#define __TI_C99_COMPLEX_ENABLED__ 1	
+#define __EDG_TYPE_TRAITS_ENABLED 1	
+#define __VARIADIC_TEMPLATES 1	
+#define __EDG_CONSTEXPR_ENABLED__ 1	
+#define __edg_front_end__ 1	
+#define __EDG_VERSION__ 413	
+#define __EDG_SIZE_TYPE__ unsigned int	
+#define __EDG_PTRDIFF_TYPE__ int	
+#define __GNUC_STDC_INLINE__ 1	
+#define __VERSION__ \"EDG g++ 4.8 mode\"	
+#define __CHAR16_TYPE__ unsigned short	
+#define __CHAR32_TYPE__ unsigned long	
+#define __TI_COMPILER_VERSION__ 21006000	
+#define __COMPILER_VERSION__ 21006000	
+#define __TI_COMPILER_VERSION_QUAL_ID__ 21147	
+#define __TI_COMPILER_VERSION_QUAL__ QUAL_LETTER	
+#define __MSP430__ 1	
+#define __SIZE_T_TYPE__ unsigned	
+#define __PTRDIFF_T_TYPE__ int	
+#define __WCHAR_T_TYPE__ unsigned int	
+#define __TI_EABI__ 1	
+#define __ELF__ 1	
+#define __little_endian__ 1	
+#define __LITTLE_ENDIAN__ 1	
+#define __TI_STRICT_ANSI_MODE__ 0	
+#define __TI_WCHAR_T_BITS__ 16	
+#define __TI_GNU_ATTRIBUTE_SUPPORT__ 1	
+#define __TI_STRICT_FP_MODE__ 1	
+#define __CHAR_BIT__ 8	
+#define __SCHAR_MAX__ 127	
+#define __SHRT_MAX__ 32767	
+#define __INT_MAX__ 32767	
+#define __LONG_MAX__ 2147483647	
+#define __LONG_LONG_MAX__ 9223372036854775807	
+#define __SIZEOF_INT__ 2	
+#define __SIZEOF_SHORT__ 2	
+#define __SIZEOF_LONG__ 4	
+#define __SIZEOF_LONG_LONG__ 8	
+#define __SIZEOF_WCHAR_T__ 2	
+#define __SIZEOF_FLOAT__ 4	
+#define __SIZEOF_DOUBLE__ 8	
+#define __SIZEOF_LONG_DOUBLE__ 8	
+#define __SIZEOF_SIZE_T__ 2	
+#define __SIZEOF_WINT_T__ 2	
+#define __SIZEOF_PTRDIFF_T__ 2	
+#define _OPTIMIZE_FOR_SPACE 1
+#define _INLINE 1
+"
