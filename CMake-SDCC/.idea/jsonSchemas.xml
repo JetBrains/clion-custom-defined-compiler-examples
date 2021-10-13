@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JsonSchemaMappingsProjectConfiguration">
+    <state>
+      <map>
+        <entry key="Custom Compiler Definition">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="Custom Compiler Definition" />
+              <option name="relativePathToSchema" value="$APPLICATION_HOME_DIR$/plugins/cidr-compiler-custom/lib/cidr-compiler-custom.jar!/schemas/clion-custom-compilers-definition.json" />
+              <option name="schemaVersion" value="JSON Schema version 7" />
+              <option name="applicationDefined" value="true" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="custom-compiler-sdcc.yaml" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+      </map>
+    </state>
+  </component>
+</project>

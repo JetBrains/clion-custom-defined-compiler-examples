@@ -16,4 +16,10 @@ Set of examples how to use [CLion](https://www.jetbrains.com/clion/) with variou
     * Compiler definition file: [custom-compiler-msp430.yaml](CMake-Texas-Instruments-MSP430-CGT/custom-compiler-msp430.yaml)
   * Host Platforms: Windows, Linux, Mac
   * Target Platform: MSP430 MCU
+* [CMake-SDCC](CMake-SDCC)
+  * Build System: [CMake](https://cmake.org/)
+  * Compiler: [SDCC](http://sdcc.sourceforge.net/) for stm8
+    * Compiler definition file: [custom-compiler-sdcc-stm8.yaml](CCMake-SDCC/custom-compiler-sdcc-stm8.yaml)
+  * Host Platforms: Windows, Linux, Mac
+  * Target Platform: STM8 MCU
   
