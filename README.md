@@ -1,6 +1,8 @@
 # About
-Set of examples how to use [CLion](https://www.jetbrains.com/clion/) with various unsupported compilers using
-[Custom Defined Compiler](https://youtrack.jetbrains.com/issue/CPP-9615) feature
+This repository contains:
+* Set of examples how to use [CLion](https://www.jetbrains.com/clion/) with various unsupported compilers using
+  [Custom Defined Compiler](https://blog.jetbrains.com/clion/2021/10/clion-2021-3-eap-custom-compiler/) feature
+ * [Public set of Custom Defined Compiler](configs) configuratuions
 
 ## Supported variants so far
 
