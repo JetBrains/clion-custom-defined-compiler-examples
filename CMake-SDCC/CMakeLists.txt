@@ -1,9 +1,5 @@
 cmake_minimum_required(VERSION 3.21)
 set(CMAKE_SYSTEM_NAME Generic)
-# Trick CMake that the compiler always works
-set(CMAKE_C_COMPILER_WORKS 1) #todo
-set(CMAKE_CXX_COMPILER_WORKS 1) #todo
-# End of trick
 
 #Find the compiler
 find_program(SDCC_COMPILER sdcc)
@@ -32,4 +28,3 @@ add_compile_options(-mstm8)
 add_link_options(-mstm8)
 
 add_executable(custom-compiler-test cmain.c)
-
