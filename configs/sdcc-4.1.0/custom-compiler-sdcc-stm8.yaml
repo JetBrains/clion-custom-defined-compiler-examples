@@ -1,0 +1,31 @@
+
+compilers:
+
+  - description: SDCC 4.1.0 STM8 Medium Memory model
+    match-args: "-mstm8"
+    match-compiler-exe: "(.*/)?sdcc(\\.exe)?"
+    code-insight-target-name: avr
+    include-dirs: "${compiler-exe-dir}/../include"
+    defines-text: "
+#define __STDC_VERSION__ 201112L
+#define __SDCC_INT_LONG_REENT 1
+#define __SDCC_MODEL_MEDIUM 1
+#define __STDC_HOSTED__ 0
+#define __STDC_UTF_16__ 1
+#define __SDCC_VERSION_MINOR 1
+#define __STDC_ISO_10646__ 201409L
+#define __SDCC_VERSION_PATCH 0
+#define __SDCC_stm8 1
+#define __SDCC_FLOAT_REENT 1
+#define __SDCC_VERSION_MAJOR 4
+#define __STDC_NO_VLA__ 1
+#define __SDCC 4_1_0
+#define __STDC_UTF_32__ 1
+#define __STDC_NO_THREADS__ 1
+#define __SDCC_CHAR_UNSIGNED 1
+#define __STDC_NO_ATOMICS__ 1
+#define __SDCC_STACK_AUTO 1
+#define __STDC__ 1
+#define __SDCC_REVISION 12072
+#define __STDC_NO_COMPLEX__ 1
+"
