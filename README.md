@@ -24,4 +24,10 @@ This repository contains:
     * Compiler definition file: [custom-compiler-sdcc-stm8.yaml](CCMake-SDCC/custom-compiler-sdcc-stm8.yaml)
   * Host Platforms: Windows, Linux, Mac
   * Target Platform: STM8 MCU
-  
+* [CMake-OpenWatcom2](CMake-OpenWatcom2)
+  * Build System: [CMake](https://cmake.org/)
+  * Compiler: [Open Watcom 2](https://github.com/open-watcom/open-watcom-v2)
+    * Compiler definition file: [openwatcom2.yaml](CMake-OpenWatcom2/openwatcom2.yaml)
+  * Host Platforms: Windows, Linux
+  * Target Platform: Windows NT, DOS, 32-bit DOS (DOS/4GW), 16-bit OS/2, 32-bit OS/2, Linux/x86
+  * Contributed by: [Natalia Portillo](https://github.com/claunia)  

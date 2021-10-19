@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="com.jetbrains.cidr.lang.workspace.compiler.custom.CustomCompilerService">
+    <option name="definitionsFile" value="$PROJECT_DIR$/openwatcom2.yaml" />
+    <option name="enabled" value="true" />
+  </component>
+</project>
