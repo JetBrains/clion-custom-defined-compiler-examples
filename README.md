@@ -21,9 +21,15 @@ This repository contains:
 * [CMake-SDCC](CMake-SDCC)
   * Build System: [CMake](https://cmake.org/)
   * Compiler: [SDCC](http://sdcc.sourceforge.net/) for stm8
-    * Compiler definition file: [custom-compiler-sdcc-stm8.yaml](CCMake-SDCC/custom-compiler-sdcc-stm8.yaml)
+    * Compiler definition file: [custom-compiler-sdcc-stm8.yaml](CMake-SDCC/custom-compiler-sdcc-stm8.yaml)
   * Host Platforms: Windows, Linux, Mac
   * Target Platform: STM8 MCU
+* [CMake-armcc](CMake-armcc)
+  * Build System: [CMake](https://cmake.org/)
+  * Compiler: [ARMCC](https://www2.keil.com/mdk5)
+    * Compiler definition file: [custom-compiler-sdcc-stm8.yaml](CMake-armcc/custom-compiler-armcc.yaml)
+  * Host Platforms: Windows
+  * Target Platform: ARM MCU
 * [CMake-OpenWatcom2](CMake-OpenWatcom2)
   * Build System: [CMake](https://cmake.org/)
   * Compiler: [Open Watcom 2](https://github.com/open-watcom/open-watcom-v2)
@@ -31,3 +37,4 @@ This repository contains:
   * Host Platforms: Windows, Linux
   * Target Platform: Windows NT, DOS, 32-bit DOS (DOS/4GW), 16-bit OS/2, 32-bit OS/2, Linux/x86
   * Contributed by: [Natalia Portillo](https://github.com/claunia)  
+  

@@ -1,0 +1,115 @@
+aliases:
+  - &armcc
+    match-compiler-exe: "(.*/)?armcc\\.exe?"
+    code-insight-target-name: arm
+    include-dirs: ${compiler-exe-dir}/../include
+    defines:
+      __disable_irq(): # define builtin as empty
+      __enable_irq(): # define builtin as empty
+
+compilers:
+  - description: C99 ARM Compiler 5.06 update 7 (build 960)
+    <<: *armcc
+    match-args: --c99
+    match-language: C
+    match-sources: ".*\\.c"
+    defines-text: "
+#define __STDC__ 1
+#define __STDC_VERSION__ 199901L
+#define __STDC_HOSTED__ 1
+#define __STDC_ISO_10646__ 200607
+#define __EDG__ 1
+#define __EDG_VERSION__ 407
+#define __EDG_SIZE_TYPE__ unsigned int
+#define __EDG_PTRDIFF_TYPE__ int
+#define __sizeof_int 4
+#define __sizeof_long 4
+#define __sizeof_ptr 4
+#define __ARMCC_VERSION 5060960
+#define __TARGET_CPU_CORTEX_M4 1
+#define __TARGET_FPU_SOFTVFP 1
+#define __CC_ARM 1
+#define __arm 1
+#define __arm__ 1
+#define __TARGET_ARCH_7E_M 1
+#define __TARGET_ARCH_ARM 0
+#define __TARGET_ARCH_THUMB 4
+#define __TARGET_ARCH_A64 0
+#define __TARGET_ARCH_AARCH32 1
+#define __TARGET_PROFILE_M 1
+#define __TARGET_FEATURE_HALFWORD 1
+#define __TARGET_FEATURE_THUMB 1
+#define __TARGET_FEATURE_MULTIPLY 1
+#define __TARGET_FEATURE_DSPMUL 1
+#define __TARGET_FEATURE_DOUBLEWORD 1
+#define __TARGET_FEATURE_DIVIDE 1
+#define __TARGET_FEATURE_UNALIGNED 1
+#define __TARGET_FEATURE_CLZ 1
+#define __TARGET_FEATURE_DMB 1
+#define __TARGET_FEATURE_EXTENSION_REGISTER_COUNT 0
+#define __APCS_INTERWORK 1
+#define __thumb 1
+#define __thumb__ 1
+#define __t32__ 1
+#define __OPTIMISE_SPACE 1
+#define __OPT_SMALL_ASSERT 1
+#define __OPTIMISE_LEVEL 2
+#define __SOFTFP__ 1
+"
+  - description: C++ ARM Compiler 5.06 update 7 (build 960)
+    <<: *armcc
+    match-language: CPP
+    match-sources: ".*\\.cpp"
+    defines-text: "
+#define __STDC__ 1
+#define __cplusplus 201103L
+#define __STDC_HOSTED__ 1
+#define __CHAR16_T_AND_CHAR32_T 1
+#define _BOOL 1
+#define __ARRAY_OPERATORS 1
+#define __IMPLICIT_INCLUDE 1
+#define __RTTI 1
+#define __EDG_RUNTIME_USES_NAMESPACES 1
+#define __EDG_IA64_ABI 1
+#define __EDG_IA64_ABI_VARIANT_CTORS_AND_DTORS_RETURN_THIS 1
+#define __EDG_IA64_ABI_USE_INT_STATIC_INIT_GUARD 1
+#define __EDG_TYPE_TRAITS_ENABLED 1
+#define __VARIADIC_TEMPLATES 1
+#define __EDG__ 1
+#define __EDG_VERSION__ 407
+#define __EDG_SIZE_TYPE__ unsigned int
+#define __EDG_PTRDIFF_TYPE__ int
+#define __sizeof_int 4
+#define __sizeof_long 4
+#define __sizeof_ptr 4
+#define __ARMCC_VERSION 5060960
+#define __TARGET_CPU_CORTEX_M4 1
+#define __TARGET_FPU_SOFTVFP 1
+#define __CC_ARM 1
+#define __arm 1
+#define __arm__ 1
+#define __TARGET_ARCH_7E_M 1
+#define __TARGET_ARCH_ARM 0
+#define __TARGET_ARCH_THUMB 4
+#define __TARGET_ARCH_A64 0
+#define __TARGET_ARCH_AARCH32 1
+#define __TARGET_PROFILE_M 1
+#define __TARGET_FEATURE_HALFWORD 1
+#define __TARGET_FEATURE_THUMB 1
+#define __TARGET_FEATURE_MULTIPLY 1
+#define __TARGET_FEATURE_DSPMUL 1
+#define __TARGET_FEATURE_DOUBLEWORD 1
+#define __TARGET_FEATURE_DIVIDE 1
+#define __TARGET_FEATURE_UNALIGNED 1
+#define __TARGET_FEATURE_CLZ 1
+#define __TARGET_FEATURE_DMB 1
+#define __TARGET_FEATURE_EXTENSION_REGISTER_COUNT 0
+#define __APCS_INTERWORK 1
+#define __thumb 1
+#define __thumb__ 1
+#define __t32__ 1
+#define __OPTIMISE_SPACE 1
+#define __OPT_SMALL_ASSERT 1
+#define __OPTIMISE_LEVEL 2
+#define __SOFTFP__ 1
+"
