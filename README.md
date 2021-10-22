@@ -6,30 +6,18 @@ This repository contains:
 
 ## Supported variants so far
 
-* [CMake-Embarcadero-BCC32C](CMake-Embarcadero-BCC32C)
-  * Build System: [CMake](https://cmake.org/)
-  * Compiler: [Embarcadero Free C Compiler](https://www.embarcadero.com/free-tools/ccompiler)
-    * Compiler definition file: [custom-compiler-bcc.yaml](CMake-Embarcadero-BCC32C/custom-compiler-bcc.yaml)
-  * Host Platforms: Windows 32bit
-  * Target Platform: Windows 32bit
-* [CMake-Texas-Instruments-MSP430-CGT](CMake-Texas-Instruments-MSP430-CGT)
-  * Build System: [CMake](https://cmake.org/)
-  * Compiler: [TI MSP430 CGT compiler](https://www.ti.com/tool/MSP-CGT)
-    * Compiler definition file: [custom-compiler-msp430.yaml](CMake-Texas-Instruments-MSP430-CGT/custom-compiler-msp430.yaml)
-  * Host Platforms: Windows, Linux, Mac
-  * Target Platform: MSP430 MCU
-* [CMake-SDCC](CMake-SDCC)
-  * Build System: [CMake](https://cmake.org/)
-  * Compiler: [SDCC](http://sdcc.sourceforge.net/) for stm8
-    * Compiler definition file: [custom-compiler-sdcc-stm8.yaml](CMake-SDCC/custom-compiler-sdcc-stm8.yaml)
-  * Host Platforms: Windows, Linux, Mac
-  * Target Platform: STM8 MCU
 * [CMake-armcc](CMake-armcc)
   * Build System: [CMake](https://cmake.org/)
   * Compiler: [ARMCC](https://www2.keil.com/mdk5)
     * Compiler definition file: [custom-compiler-sdcc-stm8.yaml](CMake-armcc/custom-compiler-armcc.yaml)
   * Host Platforms: Windows
   * Target Platform: ARM MCU
+* [CMake-Embarcadero-BCC32C](CMake-Embarcadero-BCC32C)
+  * Build System: [CMake](https://cmake.org/)
+  * Compiler: [Embarcadero Free C Compiler](https://www.embarcadero.com/free-tools/ccompiler)
+    * Compiler definition file: [custom-compiler-bcc.yaml](CMake-Embarcadero-BCC32C/custom-compiler-bcc.yaml)
+  * Host Platforms: Windows 32bit
+  * Target Platform: Windows 32bit
 * [CMake-OpenWatcom2](CMake-OpenWatcom2)
   * Build System: [CMake](https://cmake.org/)
   * Compiler: [Open Watcom 2](https://github.com/open-watcom/open-watcom-v2)
@@ -37,4 +25,16 @@ This repository contains:
   * Host Platforms: Windows, Linux
   * Target Platform: Windows NT, DOS, 32-bit DOS (DOS/4GW), 16-bit OS/2, 32-bit OS/2, Linux/x86
   * Contributed by: [Natalia Portillo](https://github.com/claunia)  
+* [CMake-SDCC](CMake-SDCC)
+  * Build System: [CMake](https://cmake.org/)
+  * Compiler: [SDCC](http://sdcc.sourceforge.net/) for stm8
+    * Compiler definition file: [custom-compiler-sdcc-stm8.yaml](CMake-SDCC/custom-compiler-sdcc-stm8.yaml)
+  * Host Platforms: Windows, Linux, Mac
+  * Target Platform: STM8 MCU
+* [CMake-Texas-Instruments-MSP430-CGT](CMake-Texas-Instruments-MSP430-CGT)
+  * Build System: [CMake](https://cmake.org/)
+  * Compiler: [TI MSP430 CGT compiler](https://www.ti.com/tool/MSP-CGT)
+    * Compiler definition file: [custom-compiler-msp430.yaml](CMake-Texas-Instruments-MSP430-CGT/custom-compiler-msp430.yaml)
+  * Host Platforms: Windows, Linux, Mac
+  * Target Platform: MSP430 MCU
   
