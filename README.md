@@ -49,7 +49,7 @@ imply endorsement.
   * Target Platform: MSP430 MCU
 * [Makefile-Tasking-Tricore](Makefile-Tasking-Tricore)
   * Build System: [Makefile](https://www.jetbrains.com/help/clion/makefiles-support.html)
-  * Compilers: [TASKING VX-toolset for 8051, ARM Cortex, Infineon PCP, TriCore](https://www.tasking.com/)
+  * Compilers: [TASKING VX-toolset for 8051, ARM Cortex, TriCore](https://www.tasking.com/)
     * Compiler definition file: [custom-compiler-tasking-generated.yaml](Makefile-Tasking-Tricore/custom-compiler-tasking-generated.yaml)
     * Compiler definition gathering script(Python): [custom_compiler_yaml_tasking.py](Makefile-Tasking-Tricore/custom_compiler_yaml_tasking.py)
   * Host Platforms: Windows, Linux
