@@ -1,0 +1,1 @@
+@set PATH=%PATH%;C:\Program Files\TASKING\TriCore v6.3r1\ctc\bin
