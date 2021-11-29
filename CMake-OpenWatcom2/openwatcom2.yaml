@@ -4,7 +4,9 @@ compilers:
   - description: OpenWatcom 32-bit OS/2 target
     match-args: "-bt=os2"
     match-compiler-exe: "(.*/)?wcl386(\\.exe)?"
-    include-dirs: "${compiler-exe-dir}/../h ${compiler-exe-dir}/../h/os2"
+    include-dirs:
+      - "${compiler-exe-dir}/../h"
+      - "${compiler-exe-dir}/../h/os2"
     defines-text: "
 #define __X86__ 1
 #define __386__ 1
@@ -20,7 +22,9 @@ compilers:
   - description: OpenWatcom 32-bit DOS target
     match-args: "-bt=dos"
     match-compiler-exe: "(.*/)?wcl386(\\.exe)?"
-    include-dirs: "${compiler-exe-dir}/../h ${compiler-exe-dir}/../h/os2"
+    include-dirs:
+      - "${compiler-exe-dir}/../h"
+      - "${compiler-exe-dir}/../h/os2"
     defines-text: "
 #define __X86__ 1
 #define __386__ 1
@@ -38,7 +42,9 @@ compilers:
   - description: OpenWatcom 32-bit Windows target
     match-args: "-bt=nt"
     match-compiler-exe: "(.*/)?wcl386(\\.exe)?"
-    include-dirs: "${compiler-exe-dir}/../h ${compiler-exe-dir}/../h/nt"
+    include-dirs:
+      - "${compiler-exe-dir}/../h"
+      - "${compiler-exe-dir}/../h/nt"
     defines-text: "
 #define __X86__ 1
 #define __386__ 1
@@ -56,7 +62,9 @@ compilers:
   - description: OpenWatcom 16-bit OS/2 target
     match-args: "-bt=os2"
     match-compiler-exe: "(.*/)?wcl(\\.exe)?"
-    include-dirs: "${compiler-exe-dir}/../h ${compiler-exe-dir}/../h/os21x"
+    include-dirs:
+      - "${compiler-exe-dir}/../h"
+      - "${compiler-exe-dir}/../h/os21x"
     defines-text: "
 #define __X86__ 1
 #define __I86__ 1
@@ -90,7 +98,9 @@ compilers:
   - description: OpenWatcom 32-bit Linux target
     match-args: "-bt=linux"
     match-compiler-exe: "(.*/)?wcl386(\\.exe)?"
-    include-dirs: "${compiler-exe-dir}/../h ${compiler-exe-dir}/../h/nt"
+    include-dirs:
+      - "${compiler-exe-dir}/../h"
+      - "${compiler-exe-dir}/../h/nt"
     defines-text: "
 #define __X86__ 1
 #define __386__ 1
