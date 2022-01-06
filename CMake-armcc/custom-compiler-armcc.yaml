@@ -1,6 +1,6 @@
 aliases:
   - &armcc
-    match-compiler-exe: "(.*/)?armcc\\.exe?"
+    match-compiler-exe: "(.*/)?armcc(\\.exe)?"
     code-insight-target-name: arm
     include-dirs: ${compiler-exe-dir}/../include
     defines:
