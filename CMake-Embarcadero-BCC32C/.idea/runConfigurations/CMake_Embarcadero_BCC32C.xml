@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="CMake-Embarcadero-BCC32C" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CMake-Embarcadero-BCC32C" TARGET_NAME="CMake-Embarcadero-BCC32C" CONFIG_NAME="BCC32C" RUN_TARGET_PROJECT_NAME="CMake-Embarcadero-BCC32C" RUN_TARGET_NAME="CMake-Embarcadero-BCC32C">
+    <envs>
+      <env name="Path" value=";C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\ImageMagick-7.0.11-Q16-HDRI;C:\Python27\;C:\Program Files (x86)\STMicroelectronics\st_toolset\asm;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\tools\LLVM\bin;C:\Program Files\dotnet\;C:\Program Files\Nordic Semiconductor\nrf-command-line-tools\bin\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\SysGCC\risc-v\bin;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;D:\mips_test\Internals\msys\bin;C:tools\COSMIC\FSE_Compilers\CXSTM8;C:tools\COSMIC\FSE_Compilers\CXSTM32;C:\tools\COSMIC\FSE_Compilers\CXSTM8;C:\tools\COSMIC\FSE_Compilers\CXSTM32;C:\ProgramData\chocolatey\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Ilia.Motornyi\.cargo\bin;C:\Users\Ilia.Motornyi\AppData\Local\Microsoft\WindowsApps;C:\Users\Ilia.Motornyi\.cargo\bin;c:\Python27\Scripts;C:\tools\GNU Tools Arm Embedded\9 2019-q4-major\bin;C:\Users\Ilia.Motornyi\.platformio\penv\Scripts;C:\Users\Ilia.Motornyi\AppData\Roaming\npm;C:/tools/BCC102/bin/" />
+    </envs>
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

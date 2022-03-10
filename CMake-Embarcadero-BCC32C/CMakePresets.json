@@ -1,14 +1,11 @@
 {
-  "version": 2,
+  "version": 3,
   "configurePresets": [
     {
       "name": "bcc32c",
-      "generator": "Ninja",
+      "generator": "MinGW Makefiles",
       "binaryDir": "cmake-build-bcc",
-      "cacheVariables": {
-        "CMAKE_C_COMPILER": "C:/tools/BCC102/bin/bcc32c.exe",
-        "CMAKE_CXX_COMPILER": "C:/tools/BCC102/bin/bcc32c.exe"
-      }
+      "toolchainFile": "embarcadero-toolchain.cmake"
     }
   ],
   "buildPresets": [
