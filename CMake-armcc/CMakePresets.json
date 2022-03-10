@@ -1,0 +1,25 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "armcc",
+      "generator": "MinGW Makefiles",
+      "toolchainFile": "armcc-toolchain.cmake",
+      "hidden": true
+    },
+    {
+      "name": "armcc-release",
+      "inherits": "armcc",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "name": "armcc-debug",
+      "inherits": "armcc",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    }
+  ]
+}

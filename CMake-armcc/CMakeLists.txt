@@ -4,43 +4,13 @@ set(CMAKE_SYSTEM_VERSION 1)
 
 set(CPU Cortex-M4)
 
-# specify cross compilers and tools
-set(ARMCC_TOOLCHAIN_PATH "C:/Keil_v5/ARM/ARMCC/bin")
-find_program(ARMCC_COMPILER armcc PATHS ${ARMCC_TOOLCHAIN_PATH})
-set(CMAKE_C_COMPILER "${ARMCC_COMPILER}")
-set(CMAKE_CXX_COMPILER "${ARMCC_COMPILER}")
-find_program(CMAKE_AR armar PATHS ${ARMCC_TOOLCHAIN_PATH})
-find_program(CMAKE_LINKER armlink PATHS ${ARMCC_TOOLCHAIN_PATH})
-
 set(CMAKE_C_FLAGS "--cpu=${CPU}  --c99")
 set(CMAKE_CXX_FLAGS "--cpu=${CPU} --cpp11")
 set(CMAKE_ASM_FLAGS "--cpu=${CPU} -c")
 
-find_program(ARMCC_FROMELF fromelf PATHS ${ARMCC_TOOLCHAIN_PATH})
-set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
-if(NOT EXISTS "${ARMCC_FROMELF}")
-    message(STATUS ${ARMCC_FROMELF})
-    message(FATAL_ERROR "ARMCC toolchain is not found, please set ARMCC_TOOLCHAIN_PATH variable correctly")
-endif()
-
-# project settings
 project(CMake-armcc C CXX ASM)
 
 add_compile_options(--thumb)
-
-if ("$${CMAKE_BUILD_TYPE}" STREQUAL "Release")
-    message(STATUS "Maximum optimization for speed")
-    add_compile_options(-Otime)
-elseif ("$${CMAKE_BUILD_TYPE}" STREQUAL "RelWithDebInfo")
-    message(STATUS "Maximum optimization for speed, debug info included")
-    add_compile_options(-Otime -g)
-elseif ("$${CMAKE_BUILD_TYPE}" STREQUAL "MinSizeRel")
-    message(STATUS "Maximum optimization for size")
-    add_compile_options(-Ospace)
-else ()
-    message(STATUS "Minimal optimization, debug info included")
-    add_compile_options(-O1 -g)
-endif ()
 
 include_directories(
         Core/Inc
@@ -96,4 +66,4 @@ add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
         COMMAND ${ARMCC_FROMELF} --output ${HEX_FILE} --i32 $<TARGET_FILE:${PROJECT_NAME}>
         COMMAND ${ARMCC_FROMELF} --output ${BIN_FILE} --bin $<TARGET_FILE:${PROJECT_NAME}>
-        COMMENT "Building $${HEX_FILE} and $${BIN_FILE}")
+        COMMENT "Building ${HEX_FILE} and ${BIN_FILE}")
