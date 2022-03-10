@@ -28,4 +28,8 @@ compilers:
 #define __STDC__ 1
 #define __SDCC_REVISION 12072
 #define __STDC_NO_COMPLEX__ 1
+#define __interrupt(n)
+#define __at(n)
+#define __naked
+#define __critical
 "

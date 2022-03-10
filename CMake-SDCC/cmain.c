@@ -1,11 +1,18 @@
 #include <stdio.h>
 
 #pragma message ("Compile C")
+
+int __at(12) codeConst = 0x13;
 int getInt();
 long long fn() {
     return 3ll;
 }
 
+void interruptHandler() __interrupt(15) __naked {
+    __critical {
+        int i=2;
+    }
+}
 void fan(unsigned int x) {
     const int res = x == 123;
     if (x == 456) {}
