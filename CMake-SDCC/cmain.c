@@ -13,6 +13,8 @@ void interruptHandler() __interrupt(15) __naked {
         int i=2;
     }
 }
+void trapHandler() __trap {
+}
 void fan(unsigned int x) {
     const int res = x == 123;
     if (x == 456) {}

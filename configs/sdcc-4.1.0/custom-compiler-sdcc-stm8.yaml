@@ -32,4 +32,5 @@ compilers:
 #define __at(n)
 #define __naked
 #define __critical
+#define __trap
 "
