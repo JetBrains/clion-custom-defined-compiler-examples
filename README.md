@@ -49,6 +49,12 @@ imply endorsement.
     * Compiler definition file: [custom-compiler-msp430.yaml](CMake-Texas-Instruments-MSP430-CGT/custom-compiler-msp430.yaml)
   * Host Platforms: Windows, Linux, Mac
   * Target Platform: MSP430 MCU
+* [Makefile-SDCC-pic16](Makefile-SDCC-pic16)
+  * Build System: [Makefile](https://www.jetbrains.com/help/clion/makefiles-support.html)
+  * Compiler: [SDCC](http://sdcc.sourceforge.net/) for pic16
+    * Compiler definition file: [clion-custom-compiler-sdcc-pic16.yaml](Makefile-SDCC-pic16/clion-custom-compiler-sdcc-pic16.yaml)
+  * Host Platforms: Windows, Linux, Mac
+  * Target Platform: Microchip PIC16
 * [Makefile-Tasking-Tricore](Makefile-Tasking-Tricore)
   * Build System: [Makefile](https://www.jetbrains.com/help/clion/makefiles-support.html)
   * Compilers: [TASKING VX-toolset for 8051, ARM Cortex, TriCore](https://www.tasking.com/)

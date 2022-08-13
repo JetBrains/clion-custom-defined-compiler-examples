@@ -1,0 +1,39 @@
+compilers:
+  - description: SDCC for PIC-16
+    match-compiler-exe: "(.*/)?sdcc(.exe)?"
+    match-args: -mpic16
+    match-language: C
+    include-dirs:
+      - ${compiler-exe-dir}/../include/pic16
+      - ${compiler-exe-dir}/../include
+      - ${compiler-exe-dir}/../non-free/include/pic16
+      - ${compiler-exe-dir}/../non-free/include
+    defines-text: "
+#define __SDCC_USE_NON_FREE 1
+#define __SDCC_PIC18F452 1
+#define __18f452 1
+#define __STACK_MODEL_SMALL 1
+#define __SDCC_pic16 1
+#define __SDCC_ALL_CALLEE_SAVES 1
+#define __STDC_VERSION__ 201112L
+#define __STDC_HOSTED__ 0
+#define __SDCCCALL 0
+#define __STDC_UTF_16__ 1
+#define __SDCC_VERSION_MINOR 2
+#define __STDC_ISO_10646__ 201409L
+#define __SDCC_VERSION_PATCH 0
+#define __SDCC_VERSION_MAJOR 4
+#define __STDC_NO_VLA__ 1
+#define __SDCC 4_2_0
+#define __STDC_UTF_32__ 1
+#define __STDC_NO_THREADS__ 1
+#define __SDCC_CHAR_UNSIGNED 1
+#define __STDC_NO_ATOMICS__ 1
+#define __STDC__ 1
+#define __SDCC_REVISION 13081
+#define __STDC_NO_COMPLEX__ 1
+
+#define __interrupt
+#define __code
+#define __at
+"
