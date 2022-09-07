@@ -16,6 +16,10 @@ All trademarks, logos and brand names are the property of their respective owner
 names used in this repository are for identification purposes only. Use of these names,trademarks and brands does not
 imply endorsement.
 
+## Documentation
+* [Custom Compilers in CLion: A Quick Guide to Using an Arbitrary Compiler in CLion](https://blog.jetbrains.com/clion/2022/09/custom-compilers/)
+* [Clion Help - Custom compilers](https://www.jetbrains.com/help/clion/custom-compilers.html)
+
 ## Supported variants so far
 
 * [CMake-armcc](CMake-armcc)
