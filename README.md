@@ -1,7 +1,10 @@
-# About
+# CLion Custom Compiler Examples
+
+[![official JetBrains project](http://jb.gg/badges/official.svg)](https://github.com/JetBrains#jetbrains-on-github)
+
 This repository contains:
 * Set of examples how to use [CLion](https://www.jetbrains.com/clion/) with various unsupported compilers using
-  [Custom Defined Compiler](https://blog.jetbrains.com/clion/2021/10/clion-2021-3-eap-custom-compiler/) feature
+  [Custom Compiler](https://blog.jetbrains.com/clion/2021/10/clion-2021-3-eap-custom-compiler/) feature
  * [Public set of Custom Defined Compiler](configs) configuratuions
 
 ## Disclaimer
