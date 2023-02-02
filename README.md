@@ -50,6 +50,12 @@ imply endorsement.
     * Compiler definition file: [custom-compiler-sdcc-stm8.yaml](CMake-SDCC/custom-compiler-sdcc-stm8.yaml)
   * Host Platforms: Windows, Linux, Mac
   * Target Platform: STM8 MCU
+* [CMake-Texas-Instruments-C6000-CGT](CMake-Texas-Instruments-C6000-CGT)
+  * Build System: [CMake](https://cmake.org/)
+  * Compiler: [TI C6000 CGT compiler](https://www.ti.com/tool/C6000-CGT)
+    * Compiler definition file: [custom-compiler-c6000.yaml](CMake-Texas-Instruments-C6000-CGT/custom-compiler-c6000.yaml)
+  * Host Platforms: Windows, Linux, Mac
+  * Target Platform: C6000 DSP
 * [CMake-Texas-Instruments-MSP430-CGT](CMake-Texas-Instruments-MSP430-CGT)
   * Build System: [CMake](https://cmake.org/)
   * Compiler: [TI MSP430 CGT compiler](https://www.ti.com/tool/MSP-CGT)
@@ -69,4 +75,3 @@ imply endorsement.
     * Compiler definition gathering script(Python): [custom_compiler_yaml_tasking.py](Makefile-Tasking-Tricore/custom_compiler_yaml_tasking.py)
   * Host Platforms: Windows, Linux
   * Target Platform: Infineon
-  
