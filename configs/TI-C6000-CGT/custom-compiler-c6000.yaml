@@ -61,6 +61,8 @@ compilers:
 #define __SIZEOF_SIZE_T__ 4	
 #define __SIZEOF_WINT_T__ 2	
 #define __SIZEOF_PTRDIFF_T__ 4	
+#define __far
+#define __near
 "
 
   - description: C++14 TI CGT C6000-DSP v8.3
@@ -161,4 +163,6 @@ compilers:
 #define __SIZEOF_SIZE_T__ 4	
 #define __SIZEOF_WINT_T__ 2	
 #define __SIZEOF_PTRDIFF_T__ 4
+#define __far
+#define __near
 "
